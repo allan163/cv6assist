@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文明6 游戏助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 聊天区域 -->
+        <div class="chat-area">
+            <div id="chat-history" class="chat-history"></div>
+            <div class="chat-input-area">
+                <textarea id="user-input" placeholder="在这里输入你的问题..." rows="1"></textarea>
+                <div class="button-group">
+                    <button id="screenshot-button" class="action-button">截图</button>
+                    <button id="send-button" class="action-button primary">发送</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 调试面板 -->
+    <div id="debug-panel" class="debug-panel">
+        <div id="debug-header" class="debug-header">
+            <span>后端实时日志</span>
+            <button id="toggle-debug" class="toggle-debug-button">-</button>
+        </div>
+        <div id="resizer" class="resizer"></div>
+        <div id="debug-content" class="debug-content">
+        </div>
+    </div>
+
+    <!-- 引入JS -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <!-- 引入marked.js用于渲染Markdown -->
+    <script src="script.js"></script>
+</body>
+</html>

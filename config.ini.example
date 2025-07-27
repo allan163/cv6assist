@@ -1,0 +1,12 @@
+[Gemini]
+# 请将你的Gemini API Key粘贴到这里
+api_key = YOUR_GEMINI_API_KEY
+
+[Proxy]
+# 如果你需要使用网络代理，请在这里填写，例如 http://127.0.0.1:7890
+# 如果不需要，请留空
+http_proxy = 
+
+[Prompt]
+# 你可以修改这里的系统提示，它会作为对Gemini的初始指令
+system_prompt = 你是一位玩文明6的高手，你现在帮助玩家解决文明6游戏过程中的各种问题，并给出建议。
